@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>XI STEM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --primary: #4267B2;
+            --secondary: #E1306C;
+            --accent: #27ae60;
+            --bg: #f5f8fa;
+            --card-bg: #fff;
+            --border: #ececec;
+        }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: var(--bg);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+            padding: 30px 0 20px 0;
+            box-shadow: 0 4px 24px rgba(66,103,178,0.15);
+            color: #fff;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+            font-weight: 700;
+        }
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            box-shadow: 0 2px 16px rgba(44,62,80,0.07);
+            padding: 32px 26px 26px 26px;
+            margin-bottom: 36px;
+            transition: box-shadow 0.2s;
+        }
+        .card:hover {
+            box-shadow: 0 6px 32px rgba(66,103,178,0.13);
+        }
+        h2 {
+            margin-top: 0;
+            color: var(--primary);
+            font-size: 1.5em;
+        }
+        ul {
+            padding-left: 18px;
+        }
+        li {
+            margin-bottom: 10px;
+            line-height: 1.7;
+        }
+        .highlight {
+            color: var(--secondary);
+            font-weight: bold;
+        }
+        .social-section {
+            text-align: center;
+        }
+        .social-buttons {
+            margin-top: 14px;
+        }
+        .social-buttons a {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 12px 28px;
+            border-radius: 30px;
+            background: var(--primary);
+            color: #fff;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 1.1em;
+            letter-spacing: 1px;
+            box-shadow: 0 2px 10px rgba(66,103,178,0.07);
+            transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+            position: relative;
+            top: 0;
+        }
+        .social-buttons a.instagram {
+            background: var(--secondary);
+        }
+        .social-buttons a:hover {
+            background: var(--accent);
+            transform: translateY(-3px) scale(1.04);
+            box-shadow: 0 6px 18px rgba(39,174,96,0.14);
+        }
+        .social-buttons a.instagram:hover {
+            background: #c72f64;
+        }
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.5em; }
+            .card { padding: 18px 10px; }
+            .social-buttons a { font-size: 1em; padding: 10px 16px; }
+            main { padding: 0 5px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to STEM XI JUDGES!</h1>
+    </header>
+    <main>
+        <div class="card">
+            <p>
+                <span class="highlight">STEM</span> stands for Science, Technology, Engineering, and Mathematics. 
+                Dive into a world of curiosity, innovation, and problem-solving!
+            </p>
+        </div>
+        <div class="card">
+            <h2>What is STEM?</h2>
+            <ul>
+                <li><strong>Science:</strong> Discover the wonders of biology, chemistry, and physics.</li>
+                <li><strong>Technology:</strong> Learn about computers, programming, and digital innovations.</li>
+                <li><strong>Engineering:</strong> Explore how things are built and how machines work.</li>
+                <li><strong>Mathematics:</strong> Understand the language of numbers and problem-solving.</li>
+            </ul>
+        </div>
+        <div class="card social-section">
+            <h2>Connect With Us</h2>
+            <div class="social-buttons">
+                <a href="https://www.facebook.com/profile.php?id=61578623245383" target="_blank" rel="noopener noreferrer">Facebook</a>
+                <a href="https://www.instagram.com/xi_judges/" target="_blank" class="instagram" rel="noopener noreferrer">Instagram</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
