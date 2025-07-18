@@ -5,6 +5,64 @@
     <title>XI STEM</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        .subjects-card {
+    background: linear-gradient(135deg, #e3eafc 75%, #ffffff 100%);
+    border-left: 8px solid #4267B2;
+    box-shadow: 0 6px 32px rgba(66,103,178,0.13);
+    margin-bottom: 36px;
+    padding-bottom: 18px;
+}
+.subjects-card h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #4267B2;
+    margin-bottom: 18px;
+    letter-spacing: 1.2px;
+}
+
+.subject-group {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 14px 16px;
+    background: #fff;
+    box-shadow: 0 1px 10px rgba(66,103,178,0.04);
+    transition: box-shadow 0.2s;
+    border-left: 5px solid #4267B2;
+}
+.subject-group h3 {
+    margin: 0 0 8px 0;
+    font-size: 1.1em;
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 8px 8px 0 0;
+    letter-spacing: 1px;
+    background: linear-gradient(90deg, #4267B2, #27ae60 90%);
+}
+
+.subject-group.core h3 {
+    background: linear-gradient(90deg, #4267B2, #27ae60);
+}
+.subject-group.applied h3 {
+    background: linear-gradient(90deg, #E1306C, #f6c23e);
+}
+.subject-group.specialized h3 {
+    background: linear-gradient(90deg, #27ae60, #4267B2);
+}
+.subject-group ul {
+    list-style: disc inside;
+    margin: 0;
+    padding-left: 12px;
+}
+.subject-group li {
+    font-size: 1.1em;
+    padding: 4px 0;
+    color: #34495e;
+    transition: color 0.2s;
+}
+.subject-group li:hover {
+    color: #27ae60;
+    font-weight: bold;
+}
         :root {
             --primary: #4267B2;
             --secondary: #E1306C;
@@ -111,6 +169,7 @@
         <h1>Welcome to STEM XI JUDGES!</h1>
     </header>
     <main>
+        
         <div class="card">
             <p>
                 <span class="highlight">STEM</span> stands for Science, Technology, Engineering, and Mathematics. 
@@ -126,6 +185,32 @@
                 <li><strong>Mathematics:</strong> Understand the language of numbers and problem-solving.</li>
             </ul>
         </div>
+<div class="card subjects-card">
+    <h2>STEM Semester 1 Subjects</h2>
+    <div class="subject-group core">
+        <h3>Core Subjects</h3>
+        <ul>
+            <li>Reading and Writing</li>
+            <li>Komunikasyon at Pananaliksik</li>
+            <li>General Mathematics</li>
+        </ul>
+    </div>
+    <div class="subject-group applied">
+        <h3>Applied Subjects</h3>
+        <ul>
+            <li>English for Academic and Professional Purposes</li>
+            <li>Empowerment Technologies</li>
+        </ul>
+    </div>
+    <div class="subject-group specialized">
+        <h3>Specialized Subjects</h3>
+        <ul>
+            <li>Pre-Calculus</li>
+            <li>General Biology 1</li>
+            <li>General Chemistry 1</li>
+        </ul>
+    </div>
+</div>
         <div class="card social-section">
             <h2>Connect With Us</h2>
             <div class="social-buttons">
